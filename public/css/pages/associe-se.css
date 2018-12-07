@@ -1,0 +1,131 @@
+.noticia { background-color: white;  }
+
+.section-form div {
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #999;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
+
+.paragrafos .img-topo-juridico { text-align: center; }
+.box-estatutos { margin-bottom: 30px; }
+.imagem-estatuto { text-align: center; }
+.texto-estatuto { }
+
+
+
+.associe-se {
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.inputs-associe-se {
+    width: 100%;
+    border-radius: 3px;
+    padding: 8px;
+    border: solid 1px #95989A;
+    margin: 5px 0;
+}
+
+/* .inputs-associe-se::placeholder { color: #005086; } */
+
+.selects {
+    border-radius: 3px;
+    border: solid 1px #95989A;
+    margin: 5px 0;
+    height: 35px;
+}
+
+select { border: solid 1px #95989A; }
+
+
+[type="radio"]:not(:checked) + span, [type="radio"]:checked + span {
+    padding-left: 25px;
+    padding-right: 10px;
+}
+
+
+[type="radio"]:not(:checked) + span:before, [type="radio"]:not(:checked) + span:after {
+    border: 2px solid #95989A;
+}
+
+.titulos-radio { margin-right: 15px; }
+
+.box-dependente {
+    border: solid 1px #aaa;
+    padding: 7px 0 6px;
+}
+
+#bt-excluir {
+    width: 100%;
+    background-color: #8c0000;
+    border-radius: 4px;
+    padding: 4px 15px;
+    border: solid 1px #95989A;
+    margin: 2px 0;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#bt-excluir:hover {
+    background-color: white;
+    color: #8c0000;
+    transition: 0.3s;
+}
+#bt-novo {
+    background-color: #47A1D2;
+    border-radius: 5px;
+    padding: 4px 15px;
+    border: solid 1px #95989A;
+    margin: 2px 0;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 5px;
+}
+#bt-novo:hover {
+    background-color: white;
+    color: #47A1D2;
+    transition: 0.3s;
+}
+
+#bt-login {
+    width: 100%;
+    background-color: #47A1D2;
+    border-radius: 5px;
+    padding: 10px;
+    border: solid 1px #95989A;
+    margin: 40px 0;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#bt-login:hover {
+    background-color: white;
+    color: #47A1D2;
+    transition: 0.3s;
+}
+
+.associe-se a:hover { color: white; }
+
+
+
+.texto-estatuto p { }
+
+.texto-estatuto p:first-child {
+    font-size: 1.1em !important;
+    color: #005086;
+    font-weight: bold;
+    margin: 0 0 3px 0;
+    line-height: 1.2em;
+    margin-bottom: 5px;
+}
+.texto-estatuto p:last-child {
+    font-size: 1em !important;
+    color: #95989A;
+    line-height: 1.2em;
+    margin: 0;
+}

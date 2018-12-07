@@ -1,0 +1,227 @@
+<?php
+    $convenioCategorias = $return['convenio-categorias'];
+?>
+@extends('layouts.adm')
+@section('css')
+    <style>
+        label { margin-bottom: 0rem; }
+        .card-header { cursor: pointer; }
+        .card .border-secondary { margin: 5px 0; }
+        .text-secondary { padding: 8px; }
+        .btns-listagem { padding-top: 3px; height: 40px; }
+        .btns-listagem .btn { padding: 3px 8px 0px; }
+        .col-form-label { word-wrap:normal; }
+        .imagesList:hover {
+            /* box-shadow: inset 0px 0px 0px 4px #999; */
+            box-shadow: 0px 0px 5px 4px #999;
+            opacity: 0.8;
+            transition: 0.3s ease-out;
+            cursor: pointer;
+        }
+        .imagesList {
+            width: 40px;
+            height: 40px;
+            float: left;
+            margin-right: 8px;
+            background-position: center !important;
+            -webkit-background-size: contain !important;
+            -moz-background-size: contain !important;
+            -o-background-size: contain !important;
+            background-size: contain !important;
+            background-repeat: no-repeat;
+            cursor: pointer;
+
+            opacity: 1;
+            /* box-shadow: inset 0px 0px 1px 1px #999; */
+            box-shadow: 0px 0px 1px 1px #999;
+            transition: 0.3s;
+        }
+        .explicacao {
+            font-size: 0.8em;
+            line-height: 1.1em;
+            color: #888;
+            margin-top: 3px;
+        }
+        .italico { font-style: italic; text-decoration: underline; }
+        .idNegrito { color: black; font-weight: bold; font-style: normal; text-decoration: underline; }
+    </style>
+@endsection
+@section('jsHead')
+    <script type="text/javascript" src="/plugins-frameworks/ckeditor/ckeditor.js"></script>
+@endsection
+@section('js')
+    <script src="/js/pages/adm/convenio-categorias.js"></script>
+@stop
+@section('content')
+
+@if($errors->any())
+<div class="alert alert-danger alert-dismissible fade show" role="alert">
+  <h5 class="text-center m-b-20"><strong>Erro ao concluir a requisição!</strong></h5>
+
+  <ul>
+      @foreach ($errors->all() as $error)
+          <li>{!! $error !!}</li>
+      @endforeach
+  </ul>
+
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+@endif
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-md-12 m-b-20">
+            <p>
+                <button class="btn btn-outline-dark btn-block" type="button" data-toggle="collapse" data-target="#register" aria-expanded="false" aria-controls="register">
+                    Cadastrar Nova Categoria
+                </button>
+            </p>
+            <div id="register" class="collapse">
+                    <div class="card border-dark">
+
+                          <form action="" method="post" enctype="multipart/form-data" class="was-validated">
+                              {{ csrf_field() }}
+                              <input type="hidden" name="action" value="register" />
+                              <div class="card-body">
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-12">
+                                                    <label for="inputName">Nome da Categoria:</label>
+                                                    <input type="text" class="form-control form-control-sm" id="inputName" maxlength="240" placeholder="Nome da Categoria" name="name" required />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-lg-1"></div> -->
+                                        <div class="col-lg-12">
+                                              <div class="form-row">
+                                                  <div class="form-group col-md-12">
+                                                      <label for="inputImage">Imagem (.PNG em Azul):</label>
+                                                      <div class="custom-file">
+                                                          <input type="file" id="inputImage" class="custom-file-input" name="file[]" />
+                                                          <label class="custom-file-label" for="customFile">Imagem (.PNG em Azul)</label>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                        </div>
+                                    </div>
+
+                              </div>
+
+                              <div class="card-footer text-muted">
+                                <button type="submit" id="bt-cadastrar-editar" class="btn btn-outline-success btn-block">Cadastrar Categoria</button>
+                              </div>
+                          </form>
+
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div></div>
+
+    <div class="row">
+        <div class="col-md-12">
+              <!-- Conteiner da listagem -->
+              <div class="card bg-light">
+                <div class="card-header">Listagem das Categorias</div>
+                <div class="card-body">
+                      <!-- ==================================================================  -->
+                      <!-- ======================== Itens listados =========================== -->
+                      <!-- ==================================================================  -->
+
+                      @forelse ($convenioCategorias as $register)
+                          <?php
+                              $img = 'images/default.png';
+                              $img = $register->image_namefilefull ? $register->image_namefilefull : $img;
+                              $imgGrande = $img;
+
+                              $checkBoxActive = '';
+                              $checkBoxCheck = '';
+                              if ($register->ativo == 'S') {
+                                  $checkBoxActive = 'active';
+                                  $checkBoxCheck = 'checked';
+                              }
+
+                              if ($loop->first) {
+                                  $ativo = 'disabled';
+                              } else {
+                                  $ativo = '';
+                              }
+                          ?>
+                          <form action="{{url("/adm/convenio/categorias-edit/{$register->id}")}}" method="get">
+                              <div class="card border-secondary">
+                                <div class="card-body text-secondary">
+                                  <div class="imagesList" rel="/{{$imgGrande}}" style="background-image: url(/{{$img}});"></div>
+                                      <div style="float:right;" class="btns-listagem">
+                                          <div class="input-group-append">
+                                            <!-- <div class="input-group-text">
+                                                <input type="checkbox" class="checkbox-register" rel-id="{{$register->id}}" rel-table="quem_somos" aria-label="Checkbox for following text input" {{$checkBoxCheck}} /><span id="span-register_{{$register->id}}" class="check-register checkBoxSN {{$checkBoxActive}}">Ativo</span>
+                                            </div> -->
+                                            <!-- <button class="btn btn-outline-secondary order" type="button" title="Edita" rel="{{$register->id}}" {{$ativo}}><i class="material-icons">vertical_align_top</i></button> -->
+                                            <button class="btn btn-outline-secondary edit" type="submit" title="Edita"><i class="material-icons i-corrige">mode_edit</i></button>
+                                            <button class="btn btn-outline-secondary delete" type="button" rel="{{$register->id}}"><i class="material-icons i-corrige">delete_forever</i></button>
+                                          </div>
+                                      </div>
+                                      <div class="texts-listagem"><p>{{$register->name}}</p></div>
+                                </div>
+                              </div>
+                          </form>
+                      @empty
+                          <p>Nenhuma categoria cadastrada no momento.</p>
+                      @endforelse
+                      <!-- ==================================================================  -->
+                      <!-- ======================== Itens listados =========================== -->
+                      <!-- ==================================================================  -->
+                </div><!-- Fim card-body -->
+              </div><!-- Fim card bg-light -->
+
+        </div> <!-- Fim m12 -->
+    </div> <!-- Fim row -->
+
+
+</div>
+
+
+<!-- =====================================================================================================================================  -->
+<!-- Modal Imagem                                                                                                                           -->
+<!-- =====================================================================================================================================  -->
+<div id="modalImage" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div id="edit" class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Imagem da Categoria</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+              <div style="margin-bottom: 10px;">
+                <img src="" alt="" id="imageThumb" class="img-fluid img-nail img-modal mx-auto d-block">
+              </div>
+              <div style="clear:both;"></div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- Form Delete -->
+<form id="form-delete" action="" method="post">
+      {{ csrf_field() }}
+      <input type="hidden" name="action" value="delete">
+      <input type="hidden" name="id" value="">
+</form>
+
+<form id="form-order" method="post">
+    {{ csrf_field() }}
+    <input type="hidden" name="id" value="">
+    <input type="hidden" name="action" value="order">
+</form>
+@endsection

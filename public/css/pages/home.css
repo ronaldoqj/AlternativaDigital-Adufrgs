@@ -1,0 +1,529 @@
+/* ============================= Banner 1 ================================ */
+#owl-home-banner1 .image {
+    height: 500px;
+    opacity: 1;
+    box-shadow: inset 0px 0px 0px 0px #005086;
+    transition: 0.3s;
+
+    background-position: center !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+}
+
+#owl-home-banner1 .text { padding: 0; }
+#owl-home-banner1 .conteiner-text { background-color: #00508660; }
+#owl-home-banner1 .text-banner {
+    padding: 25px 5px;
+    font-size: 2.2em;
+    color: white;
+    font-weight: bold;
+    line-height: 1.3em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#owl-home-banner1 table { height: 100%; }
+#owl-home-banner1 table td { padding: 0; vertical-align: bottom; }
+#owl-home-banner1 .container,
+#owl-home-banner1 .row { height: 100%; margin-bottom: 0; }
+#owl-home-banner1 .col { height: 100%; }
+#owl-home-banner1 .paragrafos { height: auto !important; color: white; }
+
+/* Controls */
+#owl-home-banner1 .owl-controls { margin-top: -30px !important; }
+#owl-home-banner1 .owl-pagination {
+  position: relative;
+  display: table;
+  margin: 0 auto;
+}
+#owl-home-banner1 .conteiner-text:before {
+    /* content: "";
+    height: 100VH;
+    position: absolute;
+    left: 4.999%;
+    width: 0;
+    height: 0;
+    border-bottom: 400px solid #ff000017;
+    border-right: 100px solid transparent; */
+}
+
+/* ============================= Banner 1 ================================ */
+#owl-home-banner2 { margin-top: -20px; }
+#owl-home-banner2 .image {
+    height: 400px;
+    opacity: 1;
+    box-shadow: inset 0px 0px 0px 0px #005086;
+    transition: 0.3s;
+
+    background-position: center !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+}
+
+#owl-home-banner2 .text { padding: 0; }
+#owl-home-banner2 .conteiner-text { background-color: #ff000060; }
+#owl-home-banner2 .text-banner {
+    padding: 25px 5px;
+    font-size: 2.2em;
+    color: white;
+    font-weight: bold;
+    line-height: 1.3em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#owl-home-banner2 table { height: 100%; }
+#owl-home-banner2 table td { padding: 0; vertical-align: bottom; }
+#owl-home-banner2 .container,
+#owl-home-banner2 .row { height: 100%; margin-bottom: 0; }
+#owl-home-banner2 .col { height: 100%; }
+#owl-home-banner2 .paragrafos { height: auto !important; color: white; }
+
+/* Controls */
+#owl-home-banner2 .owl-controls { margin-top: -30px !important; }
+#owl-home-banner2 .owl-pagination {
+  position: relative;
+  display: table;
+  margin: 0 auto;
+}
+#owl-home-banner2 .conteiner-text:before {
+    /* content: "";
+    height: 100VH;
+    position: absolute;
+    left: 4.999%;
+    width: 0;
+    height: 0;
+    border-bottom: 400px solid #ff000017;
+    border-right: 100px solid transparent; */
+}
+
+
+/* ========================= Redes Sociais ============================== */
+.redes-sociais-home {
+    background-image: linear-gradient(to right, #B51218 , #006CB1);
+}
+
+.ul-redes-sociais { margin: 10px auto; display: table; }
+.ul-redes-sociais li {
+    float: left;
+    color: white;
+    font-size: 1.8em;
+    padding: 5px;
+    font-weight: bold;
+}
+.ul-redes-sociais li a { color: inherit; }
+.li-texto {}
+.li-facebook {}
+.li-twitter {}
+.li-whatsapp {}
+
+
+
+
+/* ============================= Convenios ================================== */
+.convenios {
+    background-color: #005086;
+    padding-bottom: 30px;
+    padding-top: 18px;
+}
+
+.title-convenios {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+
+.convenios .item {
+    border: solid 1px #2075a8;
+    padding: 15px 10px;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.icone-convenio-branco { filter: contrast(0%) brightness(200%); }
+
+/* ============================ Newsletter ================================== */
+.newsletter {
+    background-color: #005086;
+    padding-bottom: 30px;
+    padding-top: 18px;
+    margin-top: -20px;
+}
+
+.newsletter label {
+    color: white;
+}
+
+.newsletter .radio-publico { margin-bottom: 7px; }
+
+.newsletter [type="radio"]:not(:checked) + span, [type="radio"]:checked + span {
+    padding-left: 27px;
+    padding-right: 10px;
+}
+
+.newsletter [type="radio"]:not(:checked) + span:before, [type="radio"]:not(:checked) + span:after {
+    border: 2px solid white;
+}
+
+.newsletter [type="radio"]:checked + span:after, [type="radio"].with-gap:checked + span:before, [type="radio"].with-gap:checked + span:after {
+    border: 2px solid white;
+}
+
+.newsletter [type="radio"]:checked + span:after, [type="radio"].with-gap:checked + span:after {
+    background-color: #CCDCE7;
+}
+
+/* ========================= Informativos ============================== */
+.informativos {
+    background-color: #006CB1;
+    padding-bottom: 30px;
+    padding-top: 18px;
+    margin-top: -20px;
+}
+
+.newsletter-home { padding-top: 15px; color: white; }
+.title-newsletter {
+    color: inherit;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 1.4em;
+    line-height: 1.25em;
+    margin-bottom: 20px;
+}
+.newsletter-home .form input[type=text] {
+    width: 100%;
+    border-radius: 3px;
+    background-color: #CCDCE7;
+    border: solid 1px #95989A;
+    margin-bottom: 10px;
+    color: #000;
+    font-weight: bold;
+}
+.newsletter-home .form input::-webkit-input-placeholder {
+   color: #005086;
+   font-weight: normal;
+   font-size: 0.8em !important;
+}
+.newsletter-home .form input:-moz-placeholder { /* Firefox 18- */
+   color: #005086;
+   font-weight: normal;
+   font-size: 0.8em !important;
+}
+.newsletter-home .form input::-moz-placeholder {  /* Firefox 19+ */
+   color: #005086;
+   font-weight: normal;
+   font-size: 0.8em !important;
+}
+.newsletter-home .form input:-ms-input-placeholder {
+   color: #005086;
+   font-weight: normal;
+   font-size: 0.8em !important;
+}
+
+.table-informativo-home {
+    border: solid 1px #000;
+}
+.table-informativo-home td {
+    height: 100%;
+    border: solid blue 1px;
+}
+
+.banner-informativo-home {
+    height: 260px;
+    background-position: center !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.newsletter-home .form .inputs { padding: 7px; }
+.newsletter-home .form .btn {
+    width: 100%;
+    border: solid 1px white;
+    border-radius: 4px;
+    background-color: #006CB1;
+    color: white;
+    font-size: 1em;
+    text-transform: none;
+    font-weight: normal;
+}
+
+.title-informativos {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+
+#owl-home-convenios .img-convenios {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+
+    background-position: contain top;
+    background-size: contain;
+}
+
+#owl-home-convenios .nome-convenios {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+
+#owl-home-informativos .img-informativos {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+
+    background-position: contain top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#owl-home-informativos .nome-informativos {
+    color: white;
+    margin-top: 10px;
+    font-size: 1.3em;
+    margin-top: 0;
+}
+
+#owl-home-informativos .nome-informativos p:first-child {
+    color: #a1d9ff;
+    font-size: 0.9em;
+    line-height: 1em;
+    margin: 0;
+}
+
+#owl-home-informativos .nome-informativos p {
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.1em;
+    margin: 8px 0 5px;
+}
+
+#owl-home-informativos .nome-informativos p:last-child {
+    font-size: 0.8em !important;
+    color: #c9dfef;
+    padding: 0;
+    margin: 0;
+    line-height: 1.3em;
+}
+
+
+
+#owl-home-informativos .td-irformativos {
+    width: 90px;
+    padding-right: 20px;
+}
+#owl-home-informativos .table-informativos,
+#owl-home-informativos .table-informativos tr,
+#owl-home-informativos .table-informativos td {
+    border: 0;
+    vertical-align: top;
+    padding-top: 0;
+}
+
+
+/* ========================= Canal do Docente ============================== */
+.docente {
+    background-color: #f0f0f0;
+    padding-bottom: 30px;
+    padding-top: 18px;
+    margin-top: -20px;
+}
+.title-docente {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #005086;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+
+
+.docente {
+    border-right: solid 0px;
+    border-right-color: #bbb;
+}
+
+.docente .colunista-text {
+    margin-top: -50px;
+    margin-bottom: 30px;
+}
+
+.docente .borda-avatar {
+    width: 90px;
+    height: 89px;
+    padding: 3px;
+    margin-left: 10px;
+    border: solid 2px #034EA1;
+    border-radius: 60px;
+}
+.docente .avatar
+{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-position: center !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+}
+
+
+/* Ronaldo */
+.docente table {
+    margin: 0 auto !important;
+}
+.docente table td:last-child .textos {
+    margin-right: 10px;
+}
+.docente table td:last-child .name {
+    color: #034EA1;
+    font-size: 1.1em;
+    font-weight: bold;
+    line-height: 1.1em;
+}
+
+
+.docente .colunista-text table { }
+.docente .colunista-text table tr { border-bottom: 0; }
+.docente .colunista-text table tr td { vertical-align: top; padding-bottom: 5px; }
+.docente .colunista-text table td.td-avatar-info { padding-top: 40px; }
+
+.title-outros-colunistas {
+    border: solid 1px #034EA1;;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-right: transparent;
+    border-radius: 10px;
+    font-size: 1.3em;
+    padding: 2px 12px;
+    width: 200px;
+    color: #034EA1;
+}
+
+
+@media (min-width: 901px) {
+    .outro { height: 490px; }
+}
+@media (min-width: 515px) {
+  .docente table {
+      margin: 0 !important;
+  }
+  .docente {
+      border-right: solid 1px;
+      border-right-color: #bbb;
+  }
+}
+
+@media (min-width: 600px) {
+    .outro-spaco-right { padding-right: 20px !important; }
+    .outro-spaco-left  { padding-left: 20px !important; }
+}
+
+.docente .container-fluid .s12 { padding: 0; }
+.docente .box-colunista { height: 230px; }
+.docente .colunista-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.docente .avatar
+{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-position: center !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+}
+
+.docente .avatar-name {
+    float: left;
+    margin-top: 15px;
+    color: #6cabcd !important;
+}
+
+.docente .title {
+    font-size: 1.2em;
+    color: #005086;
+    line-height: 1.2em;
+    margin-bottom: 5px;
+}
+.docente .title a { color: inherit; }
+
+
+.docente .subtitles {
+    font-size: 1em;
+    color: #6cabcd;
+    line-height: 1.2em;
+}
+.docente .subtitles a { color: inherit; }
+
+.docente .colunista-text div a:hover { text-decoration: underline; }
+
+
+
+.bt-ver-todas {
+    border: solid 1px #005086;
+    border-radius: 4px;
+    padding: 4px 0;
+    font-size: 0.9em;
+    color: #005086;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    cursor: pointer;
+}
+.bt-ver-todas:hover { text-decoration: underline; }
+
+
+
+/* ========================= CSS VERSÃO MOBILE ============================== */
+@media (max-width: 992px) {
+    .newsletter-home { padding: 20px 0; }
+    .title-convenios { margin: 20px 0; }
+}
+
+@media (max-width: 655px) {
+    .redes-sociais-home .container,
+    .redes-sociais-home .container .col { padding: 0; width: 100%; }
+    .ul-redes-sociais { margin: 20px auto; }
+    .ul-redes-sociais li {
+        font-size: 1.6em;
+    }
+    .ul-redes-sociais li a { color: inherit; }
+    .ul-redes-sociais li { text-align: center; }
+    .li-texto { width: 100%; }
+    .li-facebook { width: 25%; }
+    .li-twitter { width: 25%; }
+    .li-instagram { width: 25%; }
+    .li-flickr { width: 25%; }
+
+    .box-flickr .bola-flickr {
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        background-color: white;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .title-convenios { text-align: center; }
+}

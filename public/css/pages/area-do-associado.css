@@ -1,0 +1,66 @@
+.noticia { background-color: white;  }
+
+.paragrafos .img-topo-juridico { text-align: center; }
+
+.box-estatutos { margin: 30px 0; }
+
+.imagem-estatuto {
+    text-align: center;
+}
+
+.texto-estatuto {
+
+}
+
+
+
+.area-do-associado {
+   background-color: #005086;
+   padding: 40px 50px;
+   border-radius: 20px;
+   text-align: right;
+   margin-top: 40px;
+   margin-bottom: 40px;
+}
+
+.inputs-area-do-associado {
+    width: 100%;
+    background-color: #CCDCE7;
+    border-radius: 5px;
+    padding: 10px;
+    border: solid 1px #95989A;
+    margin: 5px 0;
+}
+
+.inputs-area-do-associado::placeholder { color: #005086; }
+
+#bt-login {
+    width: 100%;
+    background-color: #47A1D2;
+    border-radius: 5px;
+    padding: 10px;
+    border: solid 1px #95989A;
+    margin: 5px 0;
+    color: white;
+}
+
+.area-do-associado a:hover { color: white; }
+
+
+
+.texto-estatuto p { }
+
+.texto-estatuto p:first-child {
+    font-size: 1.1em !important;
+    color: #005086;
+    font-weight: bold;
+    margin: 0 0 3px 0;
+    line-height: 1.2em;
+    margin-bottom: 5px;
+}
+.texto-estatuto p:last-child {
+    font-size: 1em !important;
+    color: #95989A;
+    line-height: 1.2em;
+    margin: 0;
+}

@@ -1,0 +1,32 @@
+.noticia { background-color: white;  }
+
+.paragrafos .img-topo-juridico { text-align: center; }
+
+.box-estatutos {
+    margin-bottom: 30px;
+}
+
+.imagem-estatuto {
+    text-align: center;
+}
+
+.texto-estatuto {
+
+}
+
+.texto-estatuto p { }
+
+.texto-estatuto p:first-child {
+    font-size: 1.1em !important;
+    color: #005086;
+    font-weight: bold;
+    margin: 0 0 3px 0;
+    line-height: 1.2em;
+    margin-bottom: 5px;
+}
+.texto-estatuto p:last-child {
+    font-size: 1em !important;
+    color: #95989A;
+    line-height: 1.2em;
+    margin: 0;
+}

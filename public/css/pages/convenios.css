@@ -1,0 +1,183 @@
+.title-texto { margin-bottom: 0 !important; }
+
+.noticia { background-color: white;  }
+
+.paragrafos .img-topo-juridico { text-align: center; }
+
+.box-estatutos {
+    margin-bottom: 30px;
+}
+
+.imagem-estatuto {
+    text-align: center;
+}
+
+.icone-convenio-branco { filter: contrast(0%) brightness(200%); }
+
+.collapsible-header {
+    line-height: 1.5;
+    padding: 1rem;
+    color: white !important;
+    background-color: #005086;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.collapsible-header img {
+    height: 45px;
+    float: left;
+    margin-right: 10px;
+}
+.collapsible-body img {
+    /* height: 60px; */
+}
+
+.collapsible-body .title {
+    font-weight: bold;
+    color: #005086;
+    font-size: 1.4em;
+    line-height: 1.2em;
+}
+.collapsible-body .texto {
+    color: #95989A;
+    font-size: 0.85em;
+}
+.collapsible-body .contatos {
+
+}
+
+.collapsible {
+    border: 0 !important;
+    /* border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    margin: 0.5rem 0 1rem 0; */
+    border-radius: 10px;
+}
+
+.collapsible-body {
+    border: 1px solid #F2F2F2;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2px 0 10px 0;
+    background-color: #FEFEFE;
+}
+
+.collapsible-body .col {
+    margin-bottom: 20px;
+}
+.collapsible-body .contatos {
+    font-size: 0.8em;
+    color: #47A1D2;
+    margin-top: 5px;
+}
+.collapsible-body .contatos table,
+.collapsible-body .contatos table tr,
+.collapsible-body .contatos table td
+ {
+      border: 0;
+      vertical-align: text-top;
+      padding-left: 0;
+      line-height: 1.2;
+      padding-bottom: 0;
+      padding-top: 5px;
+     font-size: 1.1em;
+ }
+.collapsible-body .contatos div {
+    width: 20px;
+    height: 20px;
+    float: left;
+    background-position: center !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+}
+.collapsible-body .localizacao {
+    background: url(/images/Convenios/icone-localizacao.png) no-repeat;
+}
+.collapsible-body .fone {
+    background: url(/images/Convenios/icone-fone.png) no-repeat;
+}
+.collapsible-body .email {
+    background: url(/images/Convenios/icone-email.png) no-repeat;
+}
+.collapsible-body .site {
+    background: url(/images/Convenios/icone-site.png) no-repeat;
+}
+
+
+.collapsible {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.associe-se {
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.inputs-associe-se {
+    width: 100%;
+    border-radius: 3px;
+    padding: 8px;
+    border: solid 1px #95989A;
+    margin: 5px 0;
+}
+
+/* .inputs-associe-se::placeholder { color: #005086; } */
+
+.selects {
+    border-radius: 3px;
+    border: solid 1px #95989A;
+    margin: 5px 0;
+    height: 35px;
+}
+
+select { border: solid 1px #95989A; }
+
+
+[type="radio"]:not(:checked) + span, [type="radio"]:checked + span {
+    padding-left: 25px;
+    padding-right: 10px;
+}
+
+
+[type="radio"]:not(:checked) + span:before, [type="radio"]:not(:checked) + span:after {
+    border: 2px solid #95989A;
+}
+
+.titulos-radio { margin-right: 15px; }
+
+#bt-login {
+    width: 100%;
+    background-color: #47A1D2;
+    border-radius: 5px;
+    padding: 10px;
+    border: solid 1px #95989A;
+    margin: 40px 0;
+    color: white;
+}
+
+.associe-se a:hover { color: white; }
+
+
+
+.texto-estatuto p { }
+
+.texto-estatuto p:first-child {
+    font-size: 1.1em !important;
+    color: #005086;
+    font-weight: bold;
+    margin: 0 0 3px 0;
+    line-height: 1.2em;
+    margin-bottom: 5px;
+}
+.texto-estatuto p:last-child {
+    font-size: 1em !important;
+    color: #95989A;
+    line-height: 1.2em;
+    margin: 0;
+}

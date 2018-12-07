@@ -1,0 +1,22 @@
+.topo-noticia { margin-top: 20px; }
+.conteudo p { margin-top: 0; }
+
+.box-estatutos { margin-bottom: 30px; }
+.imagem-estatuto { text-align: center; }
+.texto-estatuto { }
+.texto-estatuto p { text-align: left; line-height: 1em; }
+.texto-estatuto p:first-child {
+    font-size: 1.4em !important;
+    color: #005086;
+    font-weight: bold;
+    margin: 10px 0 3px 0;
+}
+.texto-estatuto p:last-child {
+    font-size: 1em !important;
+    color: #95989A;
+    margin: 0;
+}
+
+.texto-estatuto p:nth-child(2) {
+    color: #039be5 !important;
+}
